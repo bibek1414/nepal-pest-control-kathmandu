@@ -5,6 +5,8 @@ import { motion } from "motion/react";
 import { Button } from "@/components/ui/Button";
 import { Plus, Minus } from "lucide-react";
 import { useGetFAQs } from "@/hooks/use-faq";
+import Link from "next/link";
+import { nepalpestcontrolPhone } from "@/constants/contact";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -33,9 +35,11 @@ export const FAQSection = () => {
               <p className="text-xs sm:text-sm text-gray-500 mb-4 sm:mb-6">
                 Our team is ready to assist you with anything you need.
               </p>
-              <Button className="w-full sm:w-auto justify-center">
-                Make a Call
-              </Button>
+              <Link href={`tel:${nepalpestcontrolPhone[0].replace(/\s/g, "")}`}>
+                <Button className="w-full sm:w-auto justify-center">
+                  Make a Call
+                </Button>
+              </Link>
             </div>
           </div>
 
@@ -56,9 +60,8 @@ export const FAQSection = () => {
                 return (
                   <motion.div
                     key={faq.id}
-                    className={`overflow-hidden transition-all duration-300 ${
-                      !isLast ? "border-b border-gray-200" : ""
-                    }`}
+                    className={`overflow-hidden transition-all duration-300 ${!isLast ? "border-b border-gray-200" : ""
+                      }`}
                     variants={fadeInUp}
                     initial={false}
                     whileInView="visible"
@@ -75,9 +78,8 @@ export const FAQSection = () => {
                         {faq.question}
                       </span>
                       <div
-                        className={`shrink-0 rounded-full p-2 transition-all duration-300 ease-in-out ${
-                          isOpen ? "bg-opacity-10" : "border bg-white"
-                        }`}
+                        className={`shrink-0 rounded-full p-2 transition-all duration-300 ease-in-out ${isOpen ? "bg-opacity-10" : "border bg-white"
+                          }`}
                         style={{
                           backgroundColor: isOpen
                             ? "rgba(59, 130, 246, 0.1)"
@@ -92,11 +94,10 @@ export const FAQSection = () => {
                       </div>
                     </button>
                     <div
-                      className={`grid transition-all duration-500 ease-in-out ${
-                        isOpen
+                      className={`grid transition-all duration-500 ease-in-out ${isOpen
                           ? "grid-rows-[1fr] opacity-100"
                           : "grid-rows-[0fr] opacity-0"
-                      }`}
+                        }`}
                     >
                       <div className="overflow-hidden">
                         <motion.div
