@@ -1,0 +1,15 @@
+# robots.txt for nepalpestcontrol.com
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private areas if any
+# Disallow: /admin/
+# Disallow: /api/
+
+# Sitemap location
+Sitemap: https://www.nepalpestcontrol.com/sitemap.xml
+
+# Crawl-delay (optional, adjust as needed)
+Crawl-delay: 1
+

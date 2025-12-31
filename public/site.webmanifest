@@ -1,0 +1,26 @@
+{
+  "name": "Nepal Pest Control - Pest Control Services",
+  "short_name": "Nepal Pest Control",
+  "description": "Expert Pest Control providing pest control services, pest control planning, and pest control automation services",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e2fcc",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
