@@ -37,9 +37,9 @@ export const ScheduleConsultation = () => {
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
             <img
-              src="/images/appointment.png"
+              src="/images/appointment.jpg"
               alt="Pest Control Technician Inspection"
-              className="w-full h-full "
+              className="w-full h-full scale-85 rounded-2xl"
             />
           </motion.div>
 

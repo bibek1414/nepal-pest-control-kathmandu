@@ -12,7 +12,7 @@ import { ServicesServer } from "@/services/services.service.server";
 export const metadata: Metadata = {
   title: "Our Services",
   description:
-    "Comprehensive pest control services from Nepal Pest Control. From pest control to pest control best practices, we offer expert pest control services tailored to your business needs.",
+    "Comprehensive pest control services from Nepal Pest Control Kathmandu. From pest control to pest control best practices, we offer expert pest control services tailored to your business needs.",
 };
 
 // ISR: Revalidate every hour (3600 seconds)

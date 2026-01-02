@@ -16,11 +16,12 @@ export const StrategicPartnerSection = () => {
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <SectionHeading
-            title="Nepal Pest Control – Your Trusted Pest Control Partner"
+            title="Nepal Pest Control Kathmandu – Your Trusted Pest Control Partner"
             italicWord="Partner"
             align="center"
             className="mb-0"
           />
+
         </motion.div>
 
         <motion.div
@@ -32,7 +33,7 @@ export const StrategicPartnerSection = () => {
         >
           <img
             src="/images/hi.jpg"
-            alt="Nepal Pest Control Team Collaboration"
+            alt="Nepal Pest Control Kathmandu Team Collaboration"
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
 

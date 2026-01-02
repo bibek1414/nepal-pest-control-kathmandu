@@ -27,7 +27,7 @@ export async function generateMetadata({
     const title = service.meta_title || service.title;
     const description =
       service.meta_description ||
-      `Learn more about ${service.title} at Nepal Pest Control. Expert pest control professionals providing professional pest control services.`;
+      `Learn more about ${service.title} at Nepal Pest Control Kathmandu. Expert pest control professionals providing professional pest control services.`;
     const image = service.thumbnail_image || "/nepalpestcontrol_logo.png";
     const url = `https://www.nepalpestcontrol.com/services/${slug}`;
 
@@ -35,10 +35,10 @@ export async function generateMetadata({
       title,
       description,
       openGraph: {
-        title: `${title} - Nepal Pest Control`,
+        title: `${title} - Nepal Pest Control Kathmandu`,
         description,
         url,
-        siteName: "Nepal Pest Control",
+        siteName: "Nepal Pest Control Kathmandu",
         images: [
           {
             url: image,
@@ -52,7 +52,7 @@ export async function generateMetadata({
       },
       twitter: {
         card: "summary_large_image",
-        title: `${title} - Nepal Pest Control`,
+        title: `${title} - Nepal Pest Control Kathmandu`,
         description,
         images: [image],
       },
@@ -62,8 +62,8 @@ export async function generateMetadata({
     };
   } catch {
     return {
-      title: "Service - Nepal Pest Control",
-      description: "Expert pest control services from Nepal Pest Control",
+      title: "Service - Nepal Pest Control Kathmandu",
+      description: "Expert pest control services from Nepal Pest Control Kathmandu",
     };
   }
 }

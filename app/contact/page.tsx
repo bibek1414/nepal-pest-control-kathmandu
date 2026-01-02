@@ -4,7 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact for Nepal Pest Control - Professional Pest Control Services",
+    "Contact for Nepal Pest Control Kathmandu - Professional Pest Control Services",
 };
 
 // ISR: Revalidate every hour (3600 seconds)

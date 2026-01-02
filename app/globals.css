@@ -5,17 +5,19 @@
   --foreground: #171717;
 
   /* Primary Orange Color Palette */
-  --primary-50: #fff7ed;
-  --primary-100: #ffedd5;
-  --primary-200: #fed7aa;
-  --primary-300: #fdba74;
-  --primary-400: #fb923c;
-  --primary-500: #f97316;
-  --primary-600: #ea580c;
-  --primary-700: #c2410c;
-  --primary-800: #9a3412;
-  --primary-900: #7c2d12;
-  --primary-950: #431407;
+  --primary-50: #e8f5e9;
+  --primary-100: #c8e6c9;
+  --primary-200: #a5d6a7;
+  --primary-300: #81c784;
+  --primary-400: #66bb6a;
+  --primary-500: #4caf50;
+  --primary-600: #43a047;
+  --primary-700: #2e7d32;
+  /* main color */
+  --primary-800: #1b5e20;
+  --primary-900: #0f3d14;
+  --primary-950: #08210b;
+
 
   /* Secondary Colors (can be customized) */
   --secondary-50: #f8fafc;
@@ -105,6 +107,7 @@
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(calc(-50% - var(--gap, 0.5rem)));
   }
@@ -120,10 +123,13 @@ body {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 /* Hide scrollbar for IE, Edge and Firefox */
 .no-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .selection\:bg-orange-100 *::selection {

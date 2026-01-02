@@ -62,7 +62,7 @@ export const MissionVisionSection = () => {
           >
             <img
               src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80"
-              alt="Nepal Pest Control Mission - Team Collaboration"
+              alt="Nepal Pest Control Kathmandu Mission - Team Collaboration"
               className="w-full h-full object-cover"
             />
           </motion.div>
@@ -79,7 +79,7 @@ export const MissionVisionSection = () => {
           >
             <img
               src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1674&q=80"
-              alt="Nepal Pest Control Vision - Global Innovation"
+              alt="Nepal Pest Control Kathmandu Vision - Global Innovation"
               className="w-full h-full object-cover"
             />
           </motion.div>

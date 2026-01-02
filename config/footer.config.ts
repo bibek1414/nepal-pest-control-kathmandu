@@ -1,13 +1,13 @@
 export const footerConfig = {
   logo: {
-    src: "/logo/nepalpestcontrol.png",
-    alt: "Nepal Pest Control Logo",
+    src: "/logo/nepalpestcontrolkathmandu.png",
+    alt: "Nepal Pest Control Kathmandu Logo",
     width: 200,
     height: 70,
     className: "object-contain",
   },
   company: {
-    name: "Nepal Pest Control",
+    name: "Nepal Pest Control Kathmandu",
     description:
       "With many years of experience and expertise, we have been recognized through the awards achieved, and we customize solutions to meet the specific needs of businesses of all sizes.",
   },

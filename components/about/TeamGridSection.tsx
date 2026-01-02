@@ -44,11 +44,11 @@ export const TeamGridSection = () => {
   const members: TeamMember[] =
     teamData && teamData.length > 0
       ? teamData.map((member: TEAM) => ({
-          id: member.id?.toString(),
-          name: member.name,
-          role: member.role,
-          image: member.photo,
-        }))
+        id: member.id?.toString(),
+        name: member.name,
+        role: member.role,
+        image: member.photo,
+      }))
       : [];
 
   return (
@@ -62,8 +62,8 @@ export const TeamGridSection = () => {
         >
           <SectionHeading
             tag="[Our Team]"
-            title="Meet the team behind Nepal Pest Control"
-            italicWord="Nepal Pest Control"
+            title="Meet the team behind Nepal Pest Control Kathmandu"
+            italicWord="Nepal Pest Control Kathmandu"
             align="center"
             className="mb-16"
           />

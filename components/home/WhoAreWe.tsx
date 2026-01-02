@@ -40,7 +40,7 @@ export const WhoAreWe: React.FC<WhoAreWeProps> = ({ onNavigate }) => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
-              Nepal Pest Control delivers safe, effective, and certified pest
+              Nepal Pest Control Kathmandu delivers safe, effective, and certified pest
               management services for homes, businesses, and industrial
               environments.
             </motion.p>
@@ -108,7 +108,7 @@ export const WhoAreWe: React.FC<WhoAreWeProps> = ({ onNavigate }) => {
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
               <img
-                src="/images/home-who-we-are.png"
+                src="/images/home-who-we-are.jpg"
                 alt="Professional Pest Control Technician"
                 className="w-full h-full object-cover"
               />

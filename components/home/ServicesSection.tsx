@@ -7,50 +7,51 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Check } from "lucide-react";
 import { useRouter } from "next/navigation";
 
+// Kathmandu-focused services
 const services = [
   {
     id: "01",
-    title: "Residential Pest Control",
+    title: "Residential Pest Control in Kathmandu",
     description:
-      "Safe and effective pest control solutions designed to protect your home, family, and living environment from common pests.",
+      "Safe and effective pest control services for homes, flats, and apartments across Kathmandu Valley.",
     points: [
       "Cockroach, Ant & Bed Bug Control",
-      "Safe Treatments for Homes & Apartments",
-      "Preventive & Follow-Up Services",
+      "Safe for Families & Pets",
+      "Regular & Preventive Treatments",
     ],
     image: "/images/residential-control.png",
   },
   {
     id: "02",
-    title: "Commercial & Industrial Pest Management",
+    title: "Commercial Pest Control Services",
     description:
-      "Comprehensive pest management programs for offices, hotels, warehouses, factories, and commercial facilities.",
+      "Reliable pest management solutions for offices, hotels, restaurants, and businesses in Kathmandu.",
     points: [
       "Customized Pest Control Plans",
-      "Compliance with Health & Safety Standards",
-      "Minimal Disruption to Operations",
+      "Hygiene & Safety Compliance",
+      "Minimal Business Disruption",
     ],
     image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952",
   },
   {
     id: "03",
-    title: "Termite & Rodent Control",
+    title: "Termite & Rodent Control in Kathmandu",
     description:
-      "Advanced termite and rodent control solutions to protect your property structure and prevent long-term damage.",
+      "Professional termite and rodent control to protect buildings and properties in Kathmandu Valley.",
     points: [
       "Termite Inspection & Treatment",
       "Rodent Control & Proofing",
-      "Long-Term Protection Solutions",
+      "Long-Term Protection",
     ],
     image: "/images/rodent-control.jpeg",
   },
   {
     id: "04",
-    title: "Hygiene, Sanitization & Disinfection",
+    title: "Sanitization & Disinfection Services",
     description:
-      "Professional hygiene and disinfection services to maintain clean, safe, and compliant environments.",
+      "Professional sanitization and disinfection services for homes and commercial spaces in Kathmandu.",
     points: [
-      "Office & Facility Sanitization",
+      "Office & Home Sanitization",
       "Healthcare & Hospitality Hygiene",
       "Government-Approved Chemicals",
     ],
@@ -74,9 +75,9 @@ export const ServicesSection = () => {
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <SectionHeading
-            title="Professional Pest Control Services You Can Rely On"
-            italicWord="Pest Control Services"
-            className="mb-0 max-w-xl"
+            title="Kathmandu Pest Control Services You Can Rely On"
+            italicWord="Kathmandu Pest Control"
+            className="mb-0 max-w-2xl"
           />
           <Button
             className="w-full md:w-auto"

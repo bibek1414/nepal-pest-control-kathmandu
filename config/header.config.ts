@@ -6,8 +6,8 @@ export type NavigationItem = {
 
 export const headerConfig = {
   logo: {
-    src: "/logo/nepalpestcontrol.png",
-    alt: "Nepal Pest Control Logo",
+    src: "/logo/nepalpestcontrolkathmandu.png",
+    alt: "Nepal Pest Control Kathmandu Logo",
     desktop: {
       width: 150,
       height: 96,

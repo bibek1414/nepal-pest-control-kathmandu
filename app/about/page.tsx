@@ -11,7 +11,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Nepal Pest Control is a professional pest control company that provides exceptional pest control services. We are a leading pest control firm that offers a wide range of services to businesses of all sizes.",
+    "Nepal Pest Control Kathmandu is a professional pest control company that provides exceptional pest control services. We are a leading pest control firm that offers a wide range of services to businesses of all sizes.",
 };
 
 // ISR: Revalidate every hour (3600 seconds)

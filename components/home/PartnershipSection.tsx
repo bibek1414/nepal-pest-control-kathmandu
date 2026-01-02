@@ -73,7 +73,7 @@ export const PartnershipSection = () => {
               className="mb-8"
             />
             <p className="text-gray-500 text-sm leading-relaxed mb-8 sm:mb-10 lg:mb-12">
-              At Nepal Pest Control, our partnerships are built around long-term
+              At Nepal Pest Control Kathmandu, our partnerships are built around long-term
               value—not one-off projects. Explore how we show up for you across
               each phase of the relationship.
             </p>
@@ -86,16 +86,14 @@ export const PartnershipSection = () => {
                   <button
                     key={id}
                     onClick={() => setActiveTab(id)}
-                    className={`pb-3 sm:pb-4 flex items-center gap-2 transition-colors cursor-pointer ${
-                      isActive
+                    className={`pb-3 sm:pb-4 flex items-center gap-2 transition-colors cursor-pointer ${isActive
                         ? "text-gray-700"
                         : "text-gray-400 hover:text-gray-700"
-                    }`}
+                      }`}
                   >
                     <span
-                      className={`w-2 h-2 rounded-full transition-colors ${
-                        isActive ? "bg-primary-600" : "bg-gray-200"
-                      }`}
+                      className={`w-2 h-2 rounded-full transition-colors ${isActive ? "bg-primary-600" : "bg-gray-200"
+                        }`}
                     ></span>
                     {title}
                   </button>

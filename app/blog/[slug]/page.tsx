@@ -25,7 +25,7 @@ export async function generateMetadata({
     const blog = await blogsServiceServer.getBlogBySlug(slug);
 
     const title = blog.title;
-    const description = `Read ${blog.title} on Nepal Pest Control's blog. Expert insights on pest control services, pest control best practices, and industry trends.`;
+    const description = `Read ${blog.title} on Nepal Pest Control Kathmandu's blog. Expert insights on pest control services, pest control best practices, and industry trends.`;
     const image = blog.thumbnail_image || "/nepalpestcontrol_logo.png";
     const url = `https://www.nepalpestcontrol.com/blog/${slug}`;
 
@@ -36,10 +36,10 @@ export async function generateMetadata({
         ? [{ name: `${blog.author.first_name} ${blog.author.last_name}` }]
         : undefined,
       openGraph: {
-        title: `${title} - Nepal Pest Control`,
+        title: `${title} - Nepal Pest Control Kathmandu`,
         description,
         url,
-        siteName: "Nepal Pest Control",
+        siteName: "Nepal Pest Control Kathmandu",
         images: [
           {
             url: image,
@@ -56,7 +56,7 @@ export async function generateMetadata({
       },
       twitter: {
         card: "summary_large_image",
-        title: `${title} - Nepal Pest Control`,
+        title: `${title} - Nepal Pest Control Kathmandu`,
         description,
         images: [image],
         creator: "@nepalpestcontrol",
@@ -67,8 +67,8 @@ export async function generateMetadata({
     };
   } catch {
     return {
-      title: "Blog Post - Nepal Pest Control",
-      description: "Read expert insights from Nepal Pest Control",
+      title: "Blog Post - Nepal Pest Control Kathmandu",
+      description: "Read expert insights from Nepal Pest Control Kathmandu",
     };
   }
 }

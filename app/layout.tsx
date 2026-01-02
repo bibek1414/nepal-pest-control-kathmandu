@@ -26,15 +26,15 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.nepalpestcontrol.com"),
   title: {
-    default: "Nepal Pest Control - Professional Pest Control Services",
-    template: "%s - Nepal Pest Control",
+    default: "Nepal Pest Control Kathmandu - Professional Pest Control Services",
+    template: "%s - Nepal Pest Control Kathmandu",
   },
   description:
-    "Nepal Pest Control is a professional pest control company that provides exceptional pest control services. We are a leading pest control firm that offers a wide range of services to businesses of all sizes.",
-  keywords: ["nepalpestcontrol.com", "nepalpestcontrol", "Nepal Pest Control"],
-  authors: [{ name: "Nepal Pest Control" }],
-  creator: "Nepal Pest Control",
-  publisher: "Nepal Pest Control",
+    "Nepal Pest Control Kathmandu is a professional pest control company that provides exceptional pest control services. We are a leading pest control firm that offers a wide range of services to businesses of all sizes.",
+  keywords: ["nepalpestcontrol.com", "nepalpestcontrol", "Nepal Pest Control Kathmandu"],
+  authors: [{ name: "Nepal Pest Control Kathmandu" }],
+  creator: "Nepal Pest Control Kathmandu",
+  publisher: "Nepal Pest Control Kathmandu",
   formatDetection: {
     email: false,
     address: false,
@@ -61,16 +61,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://www.nepalpestcontrol.com",
-    siteName: "Nepal Pest Control",
-    title: "Nepal Pest Control - Professional Pest Control Services",
+    siteName: "Nepal Pest Control Kathmandu",
+    title: "Nepal Pest Control Kathmandu - Professional Pest Control Services",
     description:
-      "Unlock pest control excellence with our seasoned team of professionals. Nepal Pest Control provide strategic pest control services to optimize your business performance.",
+      "Unlock pest control excellence with our seasoned team of professionals. Nepal Pest Control Kathmandu provide strategic pest control services to optimize your business performance.",
     images: [
       {
-        url: "/logo/nepalpestcontrol.png",
+        url: "/logo/nepalpestcontrolkathmandu.png",
         width: 1200,
         height: 630,
-        alt: "Nepal Pest Control - Professional Pest Control Services",
+        alt: "Nepal Pest Control Kathmandu - Professional Pest Control Services",
       },
     ],
   },
@@ -88,7 +88,7 @@ export default function RootLayout({
       >
         <QueryProvider>
           <Header />
-          <NextTopLoader color="#f97316" height={3} showSpinner={false} />
+          <NextTopLoader color="#2e7d32" height={3} showSpinner={false} />
           <main>{children}</main>
           <Toaster
             position="bottom-right"

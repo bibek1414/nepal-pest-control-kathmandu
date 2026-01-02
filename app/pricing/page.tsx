@@ -10,7 +10,7 @@ import { pricingServiceServer } from "@/services/pricing.service.server";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Pricing for Nepal Pest Control - Professional Pest Control Services",
+    "Pricing for Nepal Pest Control Kathmandu - Professional Pest Control Services",
 };
 
 // ISR: Revalidate every hour (3600 seconds)

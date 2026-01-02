@@ -58,7 +58,7 @@ export const PrinciplesSection = () => {
               className="mb-12"
             />
             <p className="text-gray-500 mb-12">
-              At Nepal Pest Control, our principles guide every action we take —
+              At Nepal Pest Control Kathmandu, our principles guide every action we take —
               combining innovation, expertise, and a client-centric approach to
               deliver pest control solutions you can trust.
             </p>
@@ -67,11 +67,10 @@ export const PrinciplesSection = () => {
               {principles.map((p) => (
                 <motion.div
                   key={p.id}
-                  className={`bg-white rounded-xl overflow-hidden transition-all duration-300 ${
-                    activeId === p.id
+                  className={`bg-white rounded-xl overflow-hidden transition-all duration-300 ${activeId === p.id
                       ? "shadow-md border-primary-100"
                       : "border border-transparent"
-                  }`}
+                    }`}
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.2 }}
@@ -86,21 +85,19 @@ export const PrinciplesSection = () => {
                         [{p.id}]
                       </span>
                       <span
-                        className={`text-lg font-semibold ${
-                          activeId === p.id
+                        className={`text-lg font-semibold ${activeId === p.id
                             ? "text-primary-600"
                             : "text-gray-900"
-                        }`}
+                          }`}
                       >
                         {p.title}
                       </span>
                     </div>
                     <div
-                      className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${
-                        activeId === p.id
+                      className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${activeId === p.id
                           ? "bg-primary-600 text-white"
                           : "bg-gray-100 text-gray-400"
-                      }`}
+                        }`}
                     >
                       {activeId === p.id ? (
                         <Minus size={14} />
@@ -137,7 +134,7 @@ export const PrinciplesSection = () => {
           >
             <img
               src="/images/person-protective-suit-getting-ready-disinfect-room.jpg"
-              alt="Nepal Pest Control Core Principles"
+              alt="Nepal Pest Control Kathmandu Core Principles"
               className="w-full h-full object-cover"
             />
           </motion.div>

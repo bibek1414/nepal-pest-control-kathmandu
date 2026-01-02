@@ -42,7 +42,7 @@ export const BlogHero: React.FC<BlogHeroProps> = ({
         >
           <SectionHeading
             tag="[Blog]"
-            title="The Nepal Pest Control Growth Insights Blog"
+            title="The Nepal Pest Control Kathmandu Growth Insights Blog"
             italicWord="Blog"
             align="center"
             className="mb-0"
@@ -83,7 +83,7 @@ export const BlogHero: React.FC<BlogHeroProps> = ({
                   />
                   <div>
                     <div className="font-bold text-gray-900 text-sm">
-                      {authorName ?? "Nepal Pest Control Team"}
+                      {authorName ?? "Nepal Pest Control Kathmandu Team"}
                     </div>
                     <div className="text-xs text-gray-500">{createdDate}</div>
                   </div>
