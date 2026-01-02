@@ -34,19 +34,19 @@ export const MissionVisionSection = () => {
           >
             <SectionHeading
               tag="[Our Mission]"
-              title="Empowering Businesses With Effective Pest Control"
-              italicWord="Effective"
+              title="Safeguarding Kathmandu's Homes & Businesses"
+              italicWord="Kathmandu's"
             />
             <p className="text-gray-500 mb-8 leading-relaxed">
-              Our mission is to deliver reliable, innovative pest control
-              solutions that safeguard homes and businesses, optimize
-              operations, and ensure long-term growth.
+              Our mission is to deliver reliable, eco-friendly pest control
+              solutions that safeguard homes and businesses across the Kathmandu Valley,
+              optimizing hygiene and ensuring peace of mind.
             </p>
             <FeatureList
               items={[
-                "Provide precise, real-time pest control monitoring and insights",
-                "Automate key processes to improve efficiency and reduce costs",
-                "Build lasting partnerships based on trust and proven results",
+                "Rapid response teams dedicated to Kathmandu & Lalitpur",
+                "Eco-friendly solutions safe for children and pets",
+                "Proven track record with local businesses and residences",
               ]}
             />
             <Button variant="blue" onClick={() => router.push("/contact")}>
@@ -61,7 +61,7 @@ export const MissionVisionSection = () => {
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
             <img
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80"
+              src="/images/safeguarding.png"
               alt="Nepal Pest Control Kathmandu Mission - Team Collaboration"
               className="w-full h-full object-cover"
             />
@@ -78,7 +78,7 @@ export const MissionVisionSection = () => {
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
             <img
-              src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1674&q=80"
+              src="/images/hygiene.png"
               alt="Nepal Pest Control Kathmandu Vision - Global Innovation"
               className="w-full h-full object-cover"
             />
@@ -92,19 +92,19 @@ export const MissionVisionSection = () => {
           >
             <SectionHeading
               tag="[Our Vision]"
-              title="Becoming The Leading Partner In Pest Control Excellence"
-              italicWord="Excellence"
+              title="Setting the Standard for Hygiene in Nepal"
+              italicWord="Nepal"
             />
             <p className="text-gray-500 mb-8 leading-relaxed">
-              We aim to be the go-to partner for businesses worldwide seeking
-              advanced, efficient, and sustainable pest control solutions that
-              protect assets and create long-term value.
+              We aim to be the most trusted partner for pest management in Nepal,
+              setting new benchmarks for quality, safety, and customer satisfaction
+              in the industry.
             </p>
             <FeatureList
               items={[
-                "Lead the adoption of innovative pest control technologies",
-                "Expand global reach while providing tailored, client-focused solutions",
-                "Ensure every business benefits from smart, effective pest management",
+                "Adopting international standards for local pest challenges",
+                "Expanding our service network throughout Nepal",
+                "Educating the community on sustainable pest prevention",
               ]}
             />
             <Button variant="blue" onClick={() => router.push("/contact")}>

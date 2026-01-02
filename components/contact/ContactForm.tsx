@@ -8,6 +8,7 @@ import {
   nepalpestcontrolEmail,
   nepalpestcontrolPhone,
   nepalpestcontrolHotline,
+  nepalpestcontrolFullAddress,
 } from "@/constants/contact";
 
 export const ContactForm = () => {
@@ -32,54 +33,70 @@ export const ContactForm = () => {
   };
 
   return (
-    <motion.section
-      className="py-40 bg-gray-50/50"
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.4, ease: "easeOut" }}
-    >
-      <div className="container mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-20">
+    <section className="py-16 sm:py-20 md:py-24 lg:py-40 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 xl:gap-16 mb-12 lg:mb-16">
           {/* Left Contact Details */}
-          <div className="lg:col-span-5">
+          <motion.div
+            className="lg:col-span-5"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6 }}
+          >
             <SectionHeading
-              tag="[Contact]"
+              tag="[CONTACT]"
               title="Drop Us a Message"
               italicWord="Message"
               className="mb-6"
             />
-            <p className="text-gray-500 mb-10 text-sm">
-              We&apos;re always happy to hear from you and will get back to you
-              as soon as possible.
+            <p className="text-gray-600 text-base sm:text-lg mb-10 leading-relaxed">
+              We're always happy to hear from you and will get back to you as soon as possible.
             </p>
 
             <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary-50 text-primary-600 rounded-full flex items-center justify-center shrink-0">
-                  <Mail size={18} />
+              {/* Email */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="flex items-start gap-4"
+              >
+                <div className="w-12 h-12 bg-primary-50 text-primary-600 rounded-xl flex items-center justify-center shrink-0">
+                  <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-xs text-gray-500 mb-0.5">Email</div>
-                  <div className="font-bold text-gray-900 text-base">
+                  <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Email</div>
+                  <a
+                    href={`mailto:${nepalpestcontrolEmail}`}
+                    className="font-semibold text-gray-900 text-base hover:text-primary-600 transition-colors"
+                  >
                     {nepalpestcontrolEmail}
-                  </div>
+                  </a>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary-50 text-primary-600 rounded-full flex items-center justify-center shrink-0">
-                  <Phone size={18} />
+              {/* Phone */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="flex items-start gap-4"
+              >
+                <div className="w-12 h-12 bg-primary-50 text-primary-600 rounded-xl flex items-center justify-center shrink-0">
+                  <Phone className="w-5 h-5" />
                 </div>
-                <div className="space-y-2">
+                <div className="space-y-3">
                   <div>
-                    <div className="text-xs text-gray-500 mb-0.5">Call</div>
+                    <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Phone</div>
                     <div className="space-y-1">
                       {nepalpestcontrolPhone.map((phone, index) => (
                         <a
                           key={index}
                           href={`tel:${phone.replace(/\s/g, "")}`}
-                          className="block font-bold text-gray-900 text-base hover:text-primary-600 transition-colors"
+                          className="block font-semibold text-gray-900 text-base hover:text-primary-600 transition-colors"
                         >
                           {phone}
                         </a>
@@ -87,13 +104,13 @@ export const ContactForm = () => {
                     </div>
                   </div>
                   <div>
-                    <div className="text-xs text-gray-500 mb-0.5">Hotline</div>
+                    <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Hotline</div>
                     <div className="space-y-1">
                       {nepalpestcontrolHotline.map((phone, index) => (
                         <a
                           key={index}
                           href={`tel:${phone.replace(/\s/g, "")}`}
-                          className="block font-bold text-gray-900 text-base hover:text-primary-600 transition-colors"
+                          className="block font-semibold text-gray-900 text-base hover:text-primary-600 transition-colors"
                         >
                           {phone}
                         </a>
@@ -101,39 +118,47 @@ export const ContactForm = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              {/* <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary-50 text-primary-600 rounded-full flex items-center justify-center shrink-0">
-                  <MapPin size={18} />
+              {/* Address */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="flex items-start gap-4"
+              >
+                <div className="w-12 h-12 bg-primary-50 text-primary-600 rounded-xl flex items-center justify-center shrink-0">
+                  <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-xs text-gray-500 mb-0.5">Visit Us</div>
-                  <a
-                    href="https://maps.app.goo.gl/ZtEoZromnuUbkgFB7"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 font-bold text-gray-900 text-base hover:text-primary-600 transition-colors cursor-pointer"
-                  >
-                    See on Google Map
-                  </a>
+                  <div className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Location</div>
+                  <div className="font-semibold text-gray-900 text-base">
+                    {nepalpestcontrolFullAddress}
+                  </div>
                 </div>
-              </div> */}
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Form */}
-          <div className="lg:col-span-7">
-            <div className="bg-gray-50 rounded-3xl p-8 lg:p-10 shadow-sm shadow-gray-100">
+          <motion.div
+            className="lg:col-span-7"
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 sm:p-8 lg:p-10 border border-gray-100 shadow-sm">
               <form className="space-y-5" onSubmit={handleSubmit}>
                 <div>
-                  <label className="block text-sm font-bold text-gray-900 mb-2">
+                  <label className="block text-sm font-semibold text-gray-900 mb-2">
                     Full Name
                   </label>
                   <input
                     type="text"
                     placeholder="Enter your name"
-                    className="w-full px-5 py-3.5 rounded-xl bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary-500 text-sm"
+                    className="w-full px-4 py-3 rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent text-sm transition-all"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     required
@@ -141,13 +166,13 @@ export const ContactForm = () => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-bold text-gray-900 mb-2">
+                  <label className="block text-sm font-semibold text-gray-900 mb-2">
                     Email Address
                   </label>
                   <input
                     type="email"
-                    placeholder="Enter email address"
-                    className="w-full px-5 py-3.5 rounded-xl bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary-500 text-sm"
+                    placeholder="your.email@example.com"
+                    className="w-full px-4 py-3 rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent text-sm transition-all"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
@@ -155,13 +180,13 @@ export const ContactForm = () => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-bold text-gray-900 mb-2">
-                    Write Your Message
+                  <label className="block text-sm font-semibold text-gray-900 mb-2">
+                    Your Message
                   </label>
                   <textarea
-                    rows={4}
-                    placeholder="I want to collaborate"
-                    className="w-full px-5 py-3.5 rounded-xl bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary-500 text-sm resize-none"
+                    rows={5}
+                    placeholder="Tell us about your pest control needs..."
+                    className="w-full px-4 py-3 rounded-lg bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent text-sm resize-none transition-all"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     required
@@ -171,31 +196,44 @@ export const ContactForm = () => {
                 <button
                   type="submit"
                   disabled={isPending}
-                  className="gap-3 py-3.5 bg-primary-600 text-white rounded-full font-bold flex items-center justify-between px-6 hover:bg-primary-700 transition-colors text-sm disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                  className="w-full sm:w-auto group relative px-8 py-3.5 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-semibold flex items-center justify-center gap-3 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-primary-600/20 hover:shadow-xl hover:shadow-primary-600/30"
                 >
-                  {isPending ? "Sending..." : "Send Message"}
-                  <div className="w-7 h-7 rounded-full bg-white text-primary-600 flex items-center justify-center">
+                  <span>{isPending ? "Sending..." : "Send Message"}</span>
+                  <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-white/30 transition-colors">
                     {isPending ? (
-                      <Loader2 size={14} className="animate-spin" />
+                      <Loader2 className="w-4 h-4 animate-spin" />
                     ) : (
-                      <ArrowUpRight size={14} />
+                      <ArrowUpRight className="w-4 h-4" />
                     )}
                   </div>
                 </button>
               </form>
             </div>
-          </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56516.317136166486!2d85.2849331320681!3d27.708954252240673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2044600!5e0!3m2!1sen!2snp!4v1767164164218!5m2!1sen!2snp"
-            width="1200"
-            height="450"
-            style={{ border: 0, borderRadius: "20px" }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+          </motion.div>
         </div>
+
+        {/* Map Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6 }}
+          className="w-full"
+        >
+          <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56516.317136166486!2d85.2849331320681!3d27.708954252240673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2044600!5e0!3m2!1sen!2snp!4v1767164164218!5m2!1sen!2snp"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Nepal Pest Control Location"
+            ></iframe>
+          </div>
+        </motion.div>
       </div>
-    </motion.section>
+    </section>
   );
 };

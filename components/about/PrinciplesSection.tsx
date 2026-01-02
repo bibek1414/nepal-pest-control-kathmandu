@@ -8,33 +8,33 @@ import { Plus, Minus } from "lucide-react";
 const principles = [
   {
     id: "01",
-    title: "Innovation Through Technology",
+    title: "Local Expertise, Global Standards",
     content:
-      "We leverage modern pest control tools, smart devices, and data analytics to deliver efficient, precise, and proactive solutions for homes and businesses.",
+      "We combine deep knowledge of Kathmandu's unique pest challenges with international best practices to deliver effective solutions.",
   },
   {
     id: "02",
-    title: "Partnership & Collaboration",
+    title: "Trusted by Kathmandu Families",
     content:
-      "We build lasting relationships with our clients, understanding their unique needs and providing tailored pest control strategies that ensure peace of mind.",
+      "We are committed to building lasting relationships with our neighbors, providing pest control that keeps Kathmandu homes safe and comfortable.",
   },
   {
     id: "03",
-    title: "Data-Driven Decisions",
+    title: "Safe & Eco-Friendly",
     content:
-      "Every intervention is informed by real-time monitoring and analytics, ensuring that treatments are targeted, effective, and minimize disruption.",
+      "We prioritize the health of your family and the environment by using government-approved, low-toxicity treatments safe for children and pets.",
   },
   {
     id: "04",
-    title: "Quality & Safety First",
+    title: "Prompt & Reliable Service",
     content:
-      "Our pest control services prioritize safety, compliance, and reliability. We use proven methods to protect people, property, and the environment.",
+      "We understand urgency. Our team is dedicated to providing timely inspections and treatments across the Kathmandu Valley.",
   },
   {
     id: "05",
-    title: "Global Reach, Personal Touch",
+    title: "Customer Satisfaction First",
     content:
-      "While serving clients locally and internationally, we tailor every solution to the specific needs of each business or home, ensuring measurable results and satisfaction.",
+      "Your peace of mind is our top priority. We tailor our services to your specific needs and ensure you are fully satisfied with the results.",
   },
 ];
 
@@ -68,8 +68,8 @@ export const PrinciplesSection = () => {
                 <motion.div
                   key={p.id}
                   className={`bg-white rounded-xl overflow-hidden transition-all duration-300 ${activeId === p.id
-                      ? "shadow-md border-primary-100"
-                      : "border border-transparent"
+                    ? "shadow-md border-primary-100"
+                    : "border border-transparent"
                     }`}
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -86,8 +86,8 @@ export const PrinciplesSection = () => {
                       </span>
                       <span
                         className={`text-lg font-semibold ${activeId === p.id
-                            ? "text-primary-600"
-                            : "text-gray-900"
+                          ? "text-primary-600"
+                          : "text-gray-900"
                           }`}
                       >
                         {p.title}
@@ -95,8 +95,8 @@ export const PrinciplesSection = () => {
                     </div>
                     <div
                       className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${activeId === p.id
-                          ? "bg-primary-600 text-white"
-                          : "bg-gray-100 text-gray-400"
+                        ? "bg-primary-600 text-white"
+                        : "bg-gray-100 text-gray-400"
                         }`}
                     >
                       {activeId === p.id ? (

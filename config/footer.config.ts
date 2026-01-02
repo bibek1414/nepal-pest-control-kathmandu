@@ -1,6 +1,6 @@
 export const footerConfig = {
   logo: {
-    src: "/logo/nepalpestcontrolkathmandu.png",
+    src: "/logo/white-logo.png",
     alt: "Nepal Pest Control Kathmandu Logo",
     width: 200,
     height: 70,
